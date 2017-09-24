@@ -1,0 +1,10 @@
+{
+  "name": "notify",
+  "version": "1.0.0",
+  "scripts": {
+    "lite": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
