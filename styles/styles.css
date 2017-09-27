@@ -6,7 +6,7 @@
 h1 {
     font: 60px/70px 'Pacifico', cursive;
     color: #fff;
-    padding-top: 160px;
+    margin-top: 160px;
 }
 
 h2 {
@@ -74,9 +74,10 @@ ul {}
 
 #header {
     background: url("../images/header-bg.jpg") no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 600px;
-    background-attachment: fixed; /*fixit*/
+    background-attachment: fixed;
+    overflow: auto;
 }
 
 #showcase {
@@ -91,7 +92,8 @@ ul {}
 #header div {
     color: #fff;
     font: 24px/42px 'Arial', sans-serif;
-    /* margin-top: 40px; */
+    margin-top: 35px;
+    box-sizing: content-box;
 }
 
 #header a {
