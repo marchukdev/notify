@@ -43,7 +43,8 @@ input[type=submit] {
 }
 
 blockquote {
-    font: italic 18px/29px 'Arial', sans-serif;
+    font: italic 18px 'Arial', sans-serif;
+    line-height: 32px;
     color: #848484;
     text-align: center;
     width: 860px;
@@ -52,10 +53,11 @@ blockquote {
 cite {
     display: block;
     width: 90px;
+    font: 600 18px/28px "Raleway" , sans-serif;
 }
 
 blockquote, cite {
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 a {}
@@ -74,7 +76,7 @@ ul {}
 
 #header {
     background: url("../images/header-bg.jpg") no-repeat;
-    background-size: contain;
+    background-size: cover; /*fixit*/
     height: 600px;
     background-attachment: fixed;
     overflow: auto;
@@ -149,7 +151,7 @@ ul {}
 }
 
 #newsletter p {
-    margin: 25px 0 30px;
+    margin: 15px 0 15px;
 }
 
 #newsletter .container div:nth-child(1) {
@@ -162,4 +164,19 @@ ul {}
 
 #newsletter h2, #newsletter p {
     width: 540px;
+}
+
+#feedback {
+    margin-top: 50px;
+}
+
+#slider {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 15px 0 25px -25px #333, inset -15px 0 25px -25px #333;
+    height: 50px;
+}
+
+#slider a:hover {
+    opacity: 0.4; /*fixit*/
 }
