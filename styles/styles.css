@@ -173,8 +173,10 @@ ul {}
 #slider {
     display: flex;
     justify-content: space-between;
-    box-shadow: inset 15px 0 25px -25px #333, inset -15px 0 25px -25px #333;
+    box-shadow: inset 15px 0 25px -25px #333, inset -15px 0 25px -25px #333; /* fixit */
     height: 50px;
+    width: 1150px;
+    margin: 0 auto;
 }
 
 #slider div {
@@ -183,8 +185,4 @@ ul {}
 
 #slider a:hover {
     opacity: 0.4;
-}
-
-#slider :first-child img {
-    box-shadow: inset 10px 0 10px 10px #000;
 }
