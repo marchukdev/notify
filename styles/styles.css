@@ -177,6 +177,14 @@ ul {}
     height: 50px;
 }
 
+#slider div {
+    background-color: #2ecc71;
+}
+
 #slider a:hover {
-    opacity: 0.4; /*fixit*/
+    opacity: 0.4;
+}
+
+#slider :first-child img {
+    box-shadow: inset 10px 0 10px 10px #000;
 }
