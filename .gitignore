@@ -57,11 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# Photoshop Mock-ups
-.psd
-
-# Images
-.jpg
-
 # Text files
-.txt
+*.txt
+
+# Folder with .psd and assets
+source/
