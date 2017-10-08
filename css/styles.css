@@ -3,6 +3,22 @@
     padding: 0;
 }
 
+blockquote {
+    font: italic 18px 'Arial', sans-serif;
+    line-height: 32px;
+    color: #848484;
+    text-align: center;
+    width: 860px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+cite {
+    display: block;
+    font: 600 18px/28px "Raleway", sans-serif;
+    margin-bottom: 23px;
+}
+
 h1 {
     font: 60px/70px 'Pacifico', cursive;
     color: #fff;
@@ -10,12 +26,7 @@ h1 {
 }
 
 h2 {
-    font: 22px/31px 'Raleway', sans-serif;
-}
-
-p {
-    font: 16px/29px 'Arial', sans-serif;
-    color: #848484;
+    font: 600 22px/31px 'Raleway', sans-serif;
 }
 
 input[type=email] {
@@ -42,27 +53,30 @@ input[type=submit] {
     display: block;
 }
 
-blockquote {
-    font: italic 18px 'Arial', sans-serif;
-    line-height: 32px;
+ul {
+    line-height: 130px;
+    width: 540px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    width: 545px;
+
+}
+
+p, li a {
+    font: 16px/29px 'Arial', sans-serif;
     color: #848484;
+}
+
+blockquote, cite, #feedback h2, #feedback p {
     text-align: center;
-    width: 860px;
 }
-
-cite {
-    display: block;
-    width: 90px;
-    font: 600 18px/28px "Raleway" , sans-serif;
-}
-
-blockquote, cite {
-    margin: 0 auto 30px;
-}
-
-a {}
-
-ul {}
 
 .container {
     margin: 0 auto;
@@ -91,29 +105,40 @@ ul {}
     color: #2ecc71;
 }
 
-#header div {
+#showcase div:nth-child(2) {
     color: #fff;
-    font: 24px/42px 'Arial', sans-serif;
-    margin-top: 35px;
+    font: 24px/40px 'Arial', sans-serif;
+    margin-top: 44px;
+    margin-bottom:  17px;
     box-sizing: content-box;
 }
 
-#header a {
-    width: 50px;
-    height: 50px;
+
+
+/* Application Buttons */
+#app {
+    width: 195px;
+}
+
+#app, #slider, #social-networks, ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-app {
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: #000;
     opacity: 0.40;
-    display: inline-block;
-    margin-right: 15px;
-    margin-top: 17px;
+    display: block;
     color: #fff;
     font-size: 24px;
     text-align: center;
-    line-height: 50px;
+    line-height: 55px;
 }
 
-#header a:hover {
+.social-app:hover {
     background-color: #2ecc71;
     opacity: 1;
 }
@@ -141,6 +166,9 @@ ul {}
     margin-bottom: 16px;
 }
 
+
+
+/* Email Form */
 #newsletter {
     height: 427px;
     background-color: #e3e3e3;
@@ -166,13 +194,10 @@ ul {}
     width: 540px;
 }
 
-#feedback {
-    margin-top: 50px;
-}
 
+
+/* Slider */
 #slider {
-    display: flex;
-    justify-content: space-between;
     box-shadow: inset 15px 0 25px -25px #333, inset -15px 0 25px -25px #333; /* fixit */
     height: 50px;
     width: 1150px;
@@ -185,4 +210,38 @@ ul {}
 
 #slider a:hover {
     opacity: 0.4;
+}
+
+#feedback {
+    margin-top: 50px;
+}
+
+#feedback h2 {
+    margin: 50px 0 10px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#feedback p {
+    margin-bottom: 25px;
+}
+
+
+
+/* Social Buttons */
+#social-networks {
+    width: 240px;
+    margin: 0 auto 62px;
+}
+
+#social-networks .social-app {
+    width: 33px;
+    height: 33px;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+#footer {
+    background-color: #e3e3e3;
+    height: 130px;
 }
